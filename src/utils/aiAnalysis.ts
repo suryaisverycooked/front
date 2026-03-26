@@ -158,10 +158,8 @@ export async function analyzeInfrastructureImage(
 
     // Check if backend is available first
     if (!backendAvailable) {
-      throw new Error(
-        `AI backend is not available. Make sure to run: cd AI-AGENT && node server.js`
-      );
-    }
+  console.warn("⚠️ Backend marked unavailable, attempting anyway...");
+}
 
     // Strip the data-URL prefix if present
     const base64Data = imageBase64.includes(',') ? imageBase64.split(',')[1] : imageBase64;

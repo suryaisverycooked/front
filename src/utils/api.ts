@@ -2,7 +2,7 @@
 // Central API client — connects frontend to AI-Agent backend
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:5000";
+const API_BASE = import.meta.env.VITE_API_URL || "https://six0-og6j.onrender.com";
 
 interface ApiResponse<T = any> {
   success: boolean;
